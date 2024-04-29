@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #b9a012;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+main {
+    background-color: #869123;
+    padding: 20px;
+}

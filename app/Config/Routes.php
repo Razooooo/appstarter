@@ -7,5 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/login','Connection::index');
 $routes->post('/login', 'Connection::attemptLogin');
-$routes->get('/home','Home::index');
-$routes->get('/','Home::index');
+$routes->get('/home','Home::index', ['filter' => \App\FiltersAuthenticatedFilter::class]);
+$routes->get('/','Home::index', ['filter' => \App\Filters\AuthenticatedFilter::class]);
